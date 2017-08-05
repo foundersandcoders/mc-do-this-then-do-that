@@ -1,0 +1,24 @@
+{
+  "name": "do-this-and-then-do-that",
+  "version": "1.0.0",
+  "description": "A gentle introduction to asynchronous programming in javascript.",
+  "main": "''",
+  "scripts": {
+    "test": "node test/",
+    "test_1": "node test/exercise_1.test.js",
+    "test_2": "node test/exercise_2.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foundersandcoders/mc-do-this-then-do-that.git"
+  },
+  "author": "Eoin McCarthy (@des-des)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foundersandcoders/mc-do-this-then-do-that/issues"
+  },
+  "homepage": "https://github.com/foundersandcoders/mc-do-this-then-do-that#readme",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}

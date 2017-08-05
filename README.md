@@ -2,6 +2,8 @@
 
 **Okay, things don't always happen staight away.**
 
+## Reading / Motivational writing
+
 When you write a javascript program - to run in node or the browser,
 it will only do one thing at a time (you can use the phrase single-threaded if you really want).
 
@@ -74,4 +76,39 @@ Woop!
 
 doThisOnceTheDataHasArrived is what we call a callback, we pass it to a functino that is gonna go do something off the scenes, and it will get called with the result once things are done.
 
-Now go to excersise
+## Tasks
+  1. Read the files excercise/exercise_1.js, test/exercise_1.test.js
+  2. Complete the functions in exercise_1 to pass the tests
+  3. Run the tests with the command `npm run test_1` (You will need to run `npm i` first)
+
+## Error first callbacks
+As you have seen in exercise 1, we are our functions either return a result, or return an error. Within node, async javascript there is a convention for handling async errors.
+
+We could do
+```js
+var doubleAsync = function(x, callback) {
+  if (typeof x !== 'number') {
+    callback(new Error('need a number'))
+  } else {
+    callback(x * 2)
+  }
+}
+```
+
+Instead we do
+```js
+var doubleAsync = function(x, callback) {
+  if (typeof x !== 'number') {
+    callback(new Error('need a number'))
+  } else {
+    callback(null, x * 2)
+  }
+}
+```
+ie, we always use the first argument for the callback for an error. If there is no error, we pass null as the first argument.
+
+## Tasks
+  1. Read the files excercise/exercise_2.js, test/exercise_2.test.js
+  2. Read the solutions to exercise 1, your solution for the second exercise should mirror the structure of exercise 1 solutions (but async!)
+  3. Read through the solution to exercise 2
+  4. Raise issues again this repo with feedback, pull requests welcome :heart:
