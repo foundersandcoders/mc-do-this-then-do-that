@@ -19,7 +19,7 @@ var asyncDivideByThenAdd = function(x, y, z, cb) {
   setTimeout(() => {
     asyncDivide(x, y, (error, division) => {
 
-      // todo handle the case where divide returns an error
+      // TODO: handle the case where divide returns an error
 
       cb(null, division + z)
     })

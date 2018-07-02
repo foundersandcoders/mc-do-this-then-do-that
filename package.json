@@ -1,7 +1,7 @@
 {
   "name": "do-this-and-then-do-that",
   "version": "1.0.0",
-  "description": "A gentle introduction to asynchronous programming in javascript.",
+  "description": "A gentle introduction to asynchronous programming in JavaScript.",
   "main": "''",
   "scripts": {
     "test": "node test/",
